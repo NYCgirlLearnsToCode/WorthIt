@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D2131E77201CF8070096A5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2131E76201CF8070096A5CF /* AppDelegate.swift */; };
-		D2131E79201CF8070096A5CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2131E78201CF8070096A5CF /* ViewController.swift */; };
-		D2131E7C201CF8070096A5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2131E7A201CF8070096A5CF /* Main.storyboard */; };
+		D2131E79201CF8070096A5CF /* WorthItHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2131E78201CF8070096A5CF /* WorthItHomeViewController.swift */; };
 		D2131E7E201CF8070096A5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2131E7D201CF8070096A5CF /* Assets.xcassets */; };
 		D2131E81201CF8070096A5CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2131E7F201CF8070096A5CF /* LaunchScreen.storyboard */; };
+		D2131E8B201CFFD20096A5CF /* WorthItHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2131E8A201CFFD20096A5CF /* WorthItHomeView.swift */; };
+		EE04A45174B5CE38B23E4831 /* Pods_WorthIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B522F302521EA3BB517CD05B /* Pods_WorthIt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B522F302521EA3BB517CD05B /* Pods_WorthIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorthIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95F2B534E01EEBCDA477BE0 /* Pods-WorthIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorthIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorthIt/Pods-WorthIt.debug.xcconfig"; sourceTree = "<group>"; };
 		D2131E73201CF8070096A5CF /* WorthIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorthIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2131E76201CF8070096A5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2131E78201CF8070096A5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2131E7B201CF8070096A5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2131E78201CF8070096A5CF /* WorthItHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorthItHomeViewController.swift; sourceTree = "<group>"; };
 		D2131E7D201CF8070096A5CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2131E80201CF8070096A5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2131E82201CF8070096A5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2131E8A201CFFD20096A5CF /* WorthItHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorthItHomeView.swift; sourceTree = "<group>"; };
+		E4AC7C0F509654522494142D /* Pods-WorthIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorthIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorthIt/Pods-WorthIt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE04A45174B5CE38B23E4831 /* Pods_WorthIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21D42D076AACF701418C97F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C95F2B534E01EEBCDA477BE0 /* Pods-WorthIt.debug.xcconfig */,
+				E4AC7C0F509654522494142D /* Pods-WorthIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B001B36B7AA4F506C6013927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B522F302521EA3BB517CD05B /* Pods_WorthIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2131E6A201CF8070096A5CF = {
 			isa = PBXGroup;
 			children = (
 				D2131E75201CF8070096A5CF /* WorthIt */,
 				D2131E74201CF8070096A5CF /* Products */,
+				21D42D076AACF701418C97F4 /* Pods */,
+				B001B36B7AA4F506C6013927 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,38 @@
 		D2131E75201CF8070096A5CF /* WorthIt */ = {
 			isa = PBXGroup;
 			children = (
-				D2131E76201CF8070096A5CF /* AppDelegate.swift */,
-				D2131E78201CF8070096A5CF /* ViewController.swift */,
-				D2131E7A201CF8070096A5CF /* Main.storyboard */,
-				D2131E7D201CF8070096A5CF /* Assets.xcassets */,
-				D2131E7F201CF8070096A5CF /* LaunchScreen.storyboard */,
+				D2131E89201CF85C0096A5CF /* View Controllers */,
+				D2131E88201CF83F0096A5CF /* Supporting Files */,
 				D2131E82201CF8070096A5CF /* Info.plist */,
 			);
 			path = WorthIt;
+			sourceTree = "<group>";
+		};
+		D2131E88201CF83F0096A5CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2131E76201CF8070096A5CF /* AppDelegate.swift */,
+				D2131E7D201CF8070096A5CF /* Assets.xcassets */,
+				D2131E7F201CF8070096A5CF /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2131E89201CF85C0096A5CF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2131E78201CF8070096A5CF /* WorthItHomeViewController.swift */,
+				D2131E8C201D005D0096A5CF /* Views */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D2131E8C201D005D0096A5CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2131E8A201CFFD20096A5CF /* WorthItHomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2131E85201CF8070096A5CF /* Build configuration list for PBXNativeTarget "WorthIt" */;
 			buildPhases = (
+				96A92BC77265D9BF882B0524 /* [CP] Check Pods Manifest.lock */,
 				D2131E6F201CF8070096A5CF /* Sources */,
 				D2131E70201CF8070096A5CF /* Frameworks */,
 				D2131E71201CF8070096A5CF /* Resources */,
+				539D649BD65E82BB2273FF76 /* [CP] Embed Pods Frameworks */,
+				BDD3DD61D36BE09AA50C7B2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,33 +176,79 @@
 			files = (
 				D2131E81201CF8070096A5CF /* LaunchScreen.storyboard in Resources */,
 				D2131E7E201CF8070096A5CF /* Assets.xcassets in Resources */,
-				D2131E7C201CF8070096A5CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		539D649BD65E82BB2273FF76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WorthIt/Pods-WorthIt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorthIt/Pods-WorthIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A92BC77265D9BF882B0524 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorthIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD3DD61D36BE09AA50C7B2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorthIt/Pods-WorthIt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2131E6F201CF8070096A5CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2131E79201CF8070096A5CF /* ViewController.swift in Sources */,
+				D2131E79201CF8070096A5CF /* WorthItHomeViewController.swift in Sources */,
 				D2131E77201CF8070096A5CF /* AppDelegate.swift in Sources */,
+				D2131E8B201CFFD20096A5CF /* WorthItHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2131E7A201CF8070096A5CF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2131E7B201CF8070096A5CF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2131E7F201CF8070096A5CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,6 +369,7 @@
 		};
 		D2131E86201CF8070096A5CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95F2B534E01EEBCDA477BE0 /* Pods-WorthIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +385,7 @@
 		};
 		D2131E87201CF8070096A5CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4AC7C0F509654522494142D /* Pods-WorthIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
