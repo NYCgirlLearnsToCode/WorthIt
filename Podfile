@@ -6,6 +6,14 @@ target 'WorthIt' do
   use_frameworks!
 
   # Pods for WorthIt
-pod 'SnapKit'
+	pod 'SnapKit'
+    pod 'Alamofire'
+    pod 'Kingfisher'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Storage'
+    pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git', :branch => 'wip/swift4'
+
 
 end

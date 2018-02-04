@@ -1,0 +1,132 @@
+{
+    "businesses": [
+                   {
+                   "id": "joes-pizza-new-york-4",
+                   "name": "Joe's Pizza",
+                   "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/FhbFkrh_3TrAOZvoWTyOJA/o.jpg",
+                   "is_closed": false,
+                   "url": "https://www.yelp.com/biz/joes-pizza-new-york-4?adjust_creative=om5ZiponkpRqUNa3pVPiRg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=om5ZiponkpRqUNa3pVPiRg",
+                   "review_count": 1822,
+                   "categories": [{
+                                  "alias": "pizza",
+                                  "title": "Pizza"
+                                  }],
+                   "rating": 4,
+                   "coordinates": {
+                   "latitude": 40.7305599,
+                   "longitude": -74.0021299
+                   },
+                   "transactions": [],
+                   "price": "$",
+                   "location": {
+                   "address1": "7 Carmine St",
+                   "address2": "",
+                   "address3": "",
+                   "city": "New York",
+                   "zip_code": "10014",
+                   "country": "US",
+                   "state": "NY",
+                   "display_address": [
+                                       "7 Carmine St",
+                                       "New York, NY 10014"
+                                       ]
+                   },
+                   "phone": "+12123661182",
+                   "display_phone": "(212) 366-1182",
+                   "distance": 2873.519378444
+                   },
+                   {
+                   "id": "eataly-new-york",
+                   "name": "Eataly",
+                   "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/4bpuD2hPIGdAGCp-gtrPtQ/o.jpg",
+                   "is_closed": false,
+                   "url": "https://www.yelp.com/biz/eataly-new-york?adjust_creative=om5ZiponkpRqUNa3pVPiRg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=om5ZiponkpRqUNa3pVPiRg",
+                   "review_count": 4657,
+                   "categories": [{
+                                  "alias": "italian",
+                                  "title": "Italian"
+                                  },
+                                  {
+                                  "alias": "grocery",
+                                  "title": "Grocery"
+                                  },
+                                  {
+                                  "alias": "cafes",
+                                  "title": "Cafes"
+                                  }
+                                  ],
+                   "rating": 4,
+                   "coordinates": {
+                   "latitude": 40.74195877796,
+                   "longitude": -73.989716662832
+                   },
+                   "transactions": [
+                                    "restaurant_reservation"
+                                    ],
+                   "price": "$$",
+                   "location": {
+                   "address1": "200 5th Ave",
+                   "address2": "",
+                   "address3": "",
+                   "city": "New York",
+                   "zip_code": "10010",
+                   "country": "US",
+                   "state": "NY",
+                   "display_address": [
+                                       "200 5th Ave",
+                                       "New York, NY 10010"
+                                       ]
+                   },
+                   "phone": "+12122292560",
+                   "display_phone": "(212) 229-2560",
+                   "distance": 4078.482930654
+                   },
+                   
+                   {
+                   "id": "industry-kitchen-new-york",
+                   "name": "Industry Kitchen",
+                   "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/NiEi1G1AypVqx8vkXbVnAA/o.jpg",
+                   "is_closed": false,
+                   "url": "https://www.yelp.com/biz/industry-kitchen-new-york?adjust_creative=om5ZiponkpRqUNa3pVPiRg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=om5ZiponkpRqUNa3pVPiRg",
+                   "review_count": 317,
+                   "categories": [{
+                                  "alias": "tradamerican",
+                                  "title": "American (Traditional)"
+                                  },
+                                  {
+                                  "alias": "breakfast_brunch",
+                                  "title": "Breakfast & Brunch"
+                                  },
+                                  {
+                                  "alias": "cocktailbars",
+                                  "title": "Cocktail Bars"
+                                  }
+                                  ],
+                   "rating": 3.5,
+                   "coordinates": {
+                   "latitude": 40.7049434740873,
+                   "longitude": -74.0048825740814
+                   },
+                   "transactions": [
+                                    "delivery",
+                                    "pickup"
+                                    ],
+                   "price": "$$",
+                   "location": {
+                   "address1": "70 South St",
+                   "address2": "",
+                   "address3": "",
+                   "city": "New York",
+                   "zip_code": "10005",
+                   "country": "US",
+                   "state": "NY",
+                   "display_address": [
+                                       "70 South St",
+                                       "New York, NY 10005"
+                                       ]
+                   },
+                   "phone": "+12124879600",
+                   "display_phone": "(212) 487-9600",
+                   "distance": 894.3678040917999
+                   }]
+}

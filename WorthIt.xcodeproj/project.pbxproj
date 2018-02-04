@@ -12,6 +12,11 @@
 		D2131E7E201CF8070096A5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2131E7D201CF8070096A5CF /* Assets.xcassets */; };
 		D2131E81201CF8070096A5CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2131E7F201CF8070096A5CF /* LaunchScreen.storyboard */; };
 		D2131E8B201CFFD20096A5CF /* WorthItHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2131E8A201CFFD20096A5CF /* WorthItHomeView.swift */; };
+		D24308F520217B6200735004 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24308F420217B6200735004 /* Business.swift */; };
+		D24308F72021804B00735004 /* WorthIt.json in Resources */ = {isa = PBXBuildFile; fileRef = D24308F62021804B00735004 /* WorthIt.json */; };
+		D2AFDB9C2026479A006FF6ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2AFDB9B2026479A006FF6ED /* GoogleService-Info.plist */; };
+		D2AFDB9E20264D59006FF6ED /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFDB9D20264D59006FF6ED /* LocationService.swift */; };
+		D2AFDBA62026514A006FF6ED /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFDBA52026514A006FF6ED /* DBService.swift */; };
 		EE04A45174B5CE38B23E4831 /* Pods_WorthIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B522F302521EA3BB517CD05B /* Pods_WorthIt.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		D2131E80201CF8070096A5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2131E82201CF8070096A5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2131E8A201CFFD20096A5CF /* WorthItHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorthItHomeView.swift; sourceTree = "<group>"; };
+		D24308F420217B6200735004 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		D24308F62021804B00735004 /* WorthIt.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WorthIt.json; sourceTree = "<group>"; };
+		D2AFDB9B2026479A006FF6ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2AFDB9D20264D59006FF6ED /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		D2AFDBA52026514A006FF6ED /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
 		E4AC7C0F509654522494142D /* Pods-WorthIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorthIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorthIt/Pods-WorthIt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,9 +88,15 @@
 		D2131E75201CF8070096A5CF /* WorthIt */ = {
 			isa = PBXGroup;
 			children = (
+				D24308F62021804B00735004 /* WorthIt.json */,
+				D2131E8C201D005D0096A5CF /* Views */,
+				D2AFDB9A202645DA006FF6ED /* Models */,
 				D2131E89201CF85C0096A5CF /* View Controllers */,
+				D2AFDBA420265128006FF6ED /* Database */,
+				D2AFDB9F20264D7E006FF6ED /* Services */,
 				D2131E88201CF83F0096A5CF /* Supporting Files */,
 				D2131E82201CF8070096A5CF /* Info.plist */,
+				D2AFDB9B2026479A006FF6ED /* GoogleService-Info.plist */,
 			);
 			path = WorthIt;
 			sourceTree = "<group>";
@@ -99,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				D2131E78201CF8070096A5CF /* WorthItHomeViewController.swift */,
-				D2131E8C201D005D0096A5CF /* Views */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -110,6 +125,30 @@
 				D2131E8A201CFFD20096A5CF /* WorthItHomeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D2AFDB9A202645DA006FF6ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D24308F420217B6200735004 /* Business.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2AFDB9F20264D7E006FF6ED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D2AFDB9D20264D59006FF6ED /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D2AFDBA420265128006FF6ED /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D2AFDBA52026514A006FF6ED /* DBService.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2131E81201CF8070096A5CF /* LaunchScreen.storyboard in Resources */,
+				D2AFDB9C2026479A006FF6ED /* GoogleService-Info.plist in Resources */,
+				D24308F72021804B00735004 /* WorthIt.json in Resources */,
 				D2131E7E201CF8070096A5CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,11 +230,25 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WorthIt/Pods-WorthIt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -241,8 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2131E79201CF8070096A5CF /* WorthItHomeViewController.swift in Sources */,
+				D24308F520217B6200735004 /* Business.swift in Sources */,
+				D2AFDB9E20264D59006FF6ED /* LocationService.swift in Sources */,
 				D2131E77201CF8070096A5CF /* AppDelegate.swift in Sources */,
 				D2131E8B201CFFD20096A5CF /* WorthItHomeView.swift in Sources */,
+				D2AFDBA62026514A006FF6ED /* DBService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
